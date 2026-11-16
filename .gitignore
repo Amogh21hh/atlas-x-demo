@@ -1,0 +1,21 @@
+# Secrets and credentials: never commit
+.env
+.env.*
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Local runtime data (the demo uses a temp dir, but keep any local DBs out)
+data/
+*.db
+*.db-shm
+*.db-wal
+backups/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.claude/
